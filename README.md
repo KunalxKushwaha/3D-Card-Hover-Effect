@@ -4,54 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>3D Card Hover Effect - Project ReadMe</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #1e90ff;
-    }
-    code {
-      background-color: #eaeaea;
-      padding: 2px 5px;
-      border-radius: 4px;
-      font-size: 90%;
-    }
-    pre {
-      background: #272822;
-      color: #f8f8f2;
-      padding: 1rem;
-      overflow-x: auto;
-      border-radius: 8px;
-    }
-    ul {
-      margin-left: 1.2rem;
-    }
-    a {
-      color: #1e90ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    img {
-      max-width: 100%;
-      margin-top: 1rem;
-      border-radius: 10px;
-    }
-  </style>
+
 </head>
 <body>
   <div class="container">
