@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
 
 * {
     margin: 0;
@@ -102,4 +102,174 @@ body {
 }
 .card:hover .title h2 {
     transform: translateZ(20px);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background: #120D24;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.card {
+    width: 220px;
+    height: 340px;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s, box-shadow 0.5s;
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 70%);
+    animation: rotateGlow 6s linear infinite;
+    z-index: 0;
+}
+
+.card .product,
+.card .title {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card.blue {
+    background: linear-gradient(135deg, #09AFFF, #125575);
+}
+
+.card.purple {
+    background: linear-gradient(135deg, #5911F2, #290987);
+}
+
+.card .product {
+    height: 85%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.product .number {
+    font-size: 80px;
+    line-height: 80px;
+    font-style: italic;
+    opacity: 0.25;
+    transition: transform 0.6s ease;
+}
+
+.product .sneakers {
+    font-size: 35px;
+    line-height: 35px;
+    font-style: italic;
+    opacity: 0.7;
+    transition: transform 0.6s ease;
+}
+
+.product img {
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-35%, -45%, 0);
+    pointer-events: none;
+    transition: transform 0.8s ease;
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.4));
+}
+
+.product .price {
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: -20px;
+    padding: 5px 20px;
+    border-radius: 99px 0 0 99px;
+    transition: transform 0.4s ease;
+    backdrop-filter: blur(4px);
+}
+
+.card .title {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 12px 12px;
+    transform-style: preserve-3d;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.card.blue .title {
+    background: #039BE5;
+}
+
+.card.purple .title {
+    background: #5B1AE3;
+}
+
+.card .title h2 {
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) rotateX(2deg) rotateY(-2deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .product img {
+    transform: translate3d(-50%, -40%, 80px) scale(1.1);
+}
+
+.card:hover .product .number {
+    transform: translateZ(40px) scale(1.05);
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.card:hover .product .sneakers {
+    transform: translateZ(40px) scale(1.05);
+    opacity: 0.9;
+}
+
+.card:hover .product .price {
+    transform: translateZ(20px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.card:hover .title h2 {
+    transform: translateZ(20px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
