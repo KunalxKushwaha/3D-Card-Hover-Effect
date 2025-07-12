@@ -11,7 +11,7 @@ A sleek and interactive 3D card hover effect project created using **basic HTML,
 - ⚙️ JavaScript-controlled hover interaction for enhanced responsiveness
 - 🧰 Clean and minimal HTML structure
 - 💡 Easy to understand and extend for beginners
-
+.
 ---
 
 # Author - Kunal Kushwaha📜
