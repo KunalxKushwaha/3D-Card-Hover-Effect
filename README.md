@@ -9,7 +9,7 @@ A sleek and interactive 3D card hover effect project created using **basic HTML,
 - 🎨 Smooth transitions and animations using pure CS
 - ⚙️ JavaScript-controlled hover interaction for enhanced responsiveness
 - 🧰 Clean and minimal HTML structure
-- 💡 Easy to understand and extend for beginners.
+- 💡 Easy to understand and extend for beginners
 
 ---
 
