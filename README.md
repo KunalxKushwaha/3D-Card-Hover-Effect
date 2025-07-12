@@ -7,7 +7,7 @@ A sleek and interactive 3D card hover effect project created using **basic HTML,
 ## 🚀 Features
 
 - 🎴 Realistic 3D card flipping/tilting on mouse movement
-- 🎨 Smooth transitions and animations using pure CS
+- 🎨 Smooth transitions and animations using pure CSS
 - ⚙️ JavaScript-controlled hover interaction for enhanced responsiveness
 - 🧰 Clean and minimal HTML structure
 - 💡 Easy to understand and extend for beginners
